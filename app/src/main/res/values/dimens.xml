@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="padding_general">16dp</dimen>
+    <dimen name="padding_tarjeta">12dp</dimen>
+    <dimen name="margen_tarjeta">8dp</dimen>
+    <dimen name="tamano_icono">24dp</dimen>
+    <dimen name="margen_icono">12dp</dimen>
+    <dimen name="texto_titulo">18sp</dimen>
+</resources>
