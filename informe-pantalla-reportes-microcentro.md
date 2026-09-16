@@ -55,3 +55,32 @@ Al tocar el botón "+ REPORTAR", se despliega un diálogo (`AlertDialog`) donde 
 **Tipografía:**
 - Poppins (ExtraBold / SemiBold) — título y botón
 - Inter (Medium / Regular) — contenido de las tarjetas
+
+## 7. Otras pantallas planificadas para el proyecto completo
+
+La pantalla desarrollada en esta entrega es la primera de un proyecto más amplio. A continuación se describen las demás pantallas que tendría la app completa, con sus funcionalidades esperadas y flujo de uso, para dar contexto de hacia dónde evoluciona el desarrollo en las siguientes etapas de la materia.
+
+### 7.1 Pantalla de Mapa
+
+**Objetivo:** mostrar los reportes de forma geolocalizada sobre un mapa de Microcentro, en vez de una lista de texto.
+
+**Funcionalidades esperadas:** mapa interactivo (Google Maps SDK) centrado en Microcentro, con pines de color según el tipo de reporte (rojo para controles, verde para lugares libres); al tocar un pin se muestra un detalle emergente con la dirección y hace cuánto se reportó.
+
+**Flujo de uso:** el usuario abre la pantalla y ve el mapa con los pines activos → se desplaza o hace zoom para explorar la zona → toca un pin para ver el detalle del reporte → puede volver a la lista o reportar uno nuevo desde el mismo mapa.
+
+### 7.2 Pantalla de Perfil de usuario
+
+**Objetivo:** darle identidad al usuario dentro de la app y mostrarle su propio historial de reportes.
+
+**Funcionalidades esperadas:** nombre y foto del usuario, contador de reportes realizados, listado de sus últimos reportes con fecha y validaciones recibidas de otros usuarios.
+
+**Flujo de uso:** el usuario toca el ícono de perfil en el header → ve sus datos y estadísticas → puede desplazarse por su historial de reportes → puede editar sus datos básicos.
+
+### 7.3 Pantalla de Validación de reportes
+
+**Objetivo:** permitir que otros usuarios confirmen si un reporte sigue vigente, replicando el mecanismo de validación social de Waze mencionado en la etapa de diseño del proyecto.
+
+**Funcionalidades esperadas:** al ver un reporte, dos botones ("Sigue ahí" / "Ya no está") que sirven para calcular la vigencia del dato; los reportes sin validaciones recientes se marcan visualmente como "por confirmar" y eventualmente se retiran de la lista.
+
+**Flujo de uso:** el usuario ve un reporte en la lista o el mapa → si pasó cerca del lugar, toca la opción correspondiente → el sistema actualiza la confianza del reporte y, si corresponde, lo da de baja automáticamente.
+
