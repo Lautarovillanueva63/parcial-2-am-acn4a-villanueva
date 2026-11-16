@@ -13,7 +13,7 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         android:background="@color/color_primary"
-        android:padding="16dp"
+        android:padding="@dimen/padding_general"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent">
@@ -26,6 +26,15 @@
             android:textColor="@color/white"
             android:textSize="@dimen/texto_titulo"
             android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/boton_perfil"
+            android:layout_width="@dimen/tamano_icono"
+            android:layout_height="@dimen/tamano_icono"
+            android:layout_gravity="center_vertical"
+            android:src="@android:drawable/ic_menu_myplaces"
+            app:tint="@color/white"
+            android:contentDescription="Perfil" />
 
     </LinearLayout>
 
@@ -46,6 +55,7 @@
             android:padding="@dimen/padding_general">
 
             <LinearLayout
+                android:id="@+id/tarjeta_control_fija"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
@@ -85,6 +95,7 @@
             </LinearLayout>
 
             <LinearLayout
+                android:id="@+id/tarjeta_libre_fija"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
