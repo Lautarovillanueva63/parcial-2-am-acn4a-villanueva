@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">ReportesMicrocentro</string>
+    <string name="titulo_pantalla">REPORTES - MICROCENTRO</string>
+    <string name="texto_reportar">+ REPORTAR</string>
+
+    <string name="tipo_control">Control policial</string>
+    <string name="tipo_libre">Lugar libre</string>
+
+    <string name="calle_1">Av. Corrientes y Florida</string>
+    <string name="calle_2">Reconquista 350</string>
+    <string name="calle_3">San Martín y Bartolomé Mitre</string>
+    <string name="calle_4">25 de Mayo 500</string>
+</resources>
