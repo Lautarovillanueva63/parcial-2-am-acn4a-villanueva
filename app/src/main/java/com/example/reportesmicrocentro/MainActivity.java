@@ -14,6 +14,7 @@ import android.widget.LinearLayout;
 import android.widget.Spinner;
 import android.widget.TextView;
 import androidx.appcompat.app.AppCompatActivity;
+import com.google.firebase.auth.FirebaseAuth;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -24,6 +25,13 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        FirebaseAuth auth = FirebaseAuth.getInstance();
+        if (auth.getCurrentUser() == null) {
+            auth.signInAnonymously()
+                    .addOnSuccessListener(result ->
+                            android.util.Log.d("FirebaseAuth", "Usuario autenticado: " + result.getUser().getUid()))
+                    .addOnFailureListener(e ->
+                            android.util.Log.e("FirebaseAuth", "Error al autenticar", e));}
 
         listaReportes = findViewById(R.id.lista_reportes);
         botonReportar = findViewById(R.id.boton_reportar);
